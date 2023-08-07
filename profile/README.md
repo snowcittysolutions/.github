@@ -52,7 +52,7 @@ Snow Citty Security Solutions
 <!-- ABOUT THE PROJECT -->
 ## About
 
-[![Product Name Screen Shot][product-screenshot]](https://snowcittysecuritysolutions.us)
+[![GangLand][product-screenshot]](https://snowcittysecuritysolutions.us)
 
 Snow Citty Security Solutions was founded by a life-long tech enthusiast with over 20 years of experience building and securing computer systems. We provide industry-leading cybersecurity services tailored to companies of all sizes. Our solutions range from penetration testing and vulnerability assessments to managed security services and training.
 
@@ -108,7 +108,7 @@ Our services are designed to meet the needs of companies across all industries a
 
 **Managed SIEM** - 24/7 monitoring and alerting tuned to detect advanced threats targeting your organization.
 
-_For more information, visit our [website](https://snowcittysecurity.com)._
+_For more information, visit our [website](https://snowcittysolutions.us)._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
