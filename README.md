@@ -1,6 +1,6 @@
  Hi there 👋
 "We Are All We Got"
-<!--
+<!-- https://github.com/snowcittysolutions/.github/blob/16224360168f0b081097dc955dc55aae027019a2/favicon-16x16.png -->
 
 🙋‍♀️ 🌈 👩‍💻 🍿🧙 
 Snow Citty Security Solutions
@@ -11,7 +11,8 @@ Snow Citty Security Solutions
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-<!-- PROJECT LOGO -->
+<!-- https://github.com/snowcittysolutions/.github/blob/16224360168f0b081097dc955dc55aae027019a2/favicon-16x16.png -->
+
 <br />
 <div align="center">
   <a href="https://github.com/snowcittysecurity/snowcitty">
