@@ -1,176 +1,83 @@
- Hi there 👋
-"We Are All We Got"
-<!--
+# GuardingUS-AI Services
 
-🙋‍♀️ 🌈 👩‍💻 🍿🧙 
-Snow Citty Security Solutions
+Hey there! We're so glad you're interested in GuardingUS-AI Services. We're a small team of security geeks who got tired of seeing businesses struggle with cyberthreats. That's why we built this tool - to make robust enterprise-grade security accessible for organizations of any size. 
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+We're passionate about empowering business owners to protect their livelihood. Our artificial intelligence algorithms do the heavy lifting so you can focus on what matters most.
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/snowcittysecurity/snowcitty">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+This README will walk you through how to get setup with GuardingUS-AI and take advantage of our threat detection, monitoring, and response capabilities tailored for small biz. We try to explain things in a simple way, but let us know if you have any other questions!
 
-<h3 align="center">Snow Citty Security Solutions</h3>
+## Highlight Reel
 
-  <p align="center">
-    Cutting-edge cybersecurity for companies of all sizes
-    <br />
-    <a href="https://github.com/snowcittysecurity/snowcitty"><strong>Explore our solutions »</strong></a>
-    <br />
-    <br />
-    <a href="https://snowcittysecurity.com">View Website</a>
-    ·
-    <a href="https://github.com/snowcittysecurity/snowcitty/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/snowcittysecurity/snowcitty/issues">Request Feature</a>
-  </p>
-</div>
+Some of the key things GuardingUS-AI can do for your business:
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
+- Use machine learning to continuously analyze traffic and detect threats 🔍
+- Send real-time alerts so you can respond quickly to attacks 🚨
+- Identify unusual user activity that could indicate compromised accounts 🕵️
+- Customize sensitivity rules to match your risk tolerance ⚙️  
+- Integrate with your existing tools through API access 🔗
+- Monitor critical systems like servers, devices, cloud apps and more 🖥
 
-- [About](#about)
-  - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
+And much more! We're constantly improving the product based on customer feedback.
 
-<!-- ABOUT THE PROJECT -->
-## About
-
-[![GangLand][product-screenshot]](https://snowcittysecuritysolutions.us)
-
-Snow Citty Security Solutions was founded by a life-long tech enthusiast with over 20 years of experience building and securing computer systems. We provide industry-leading cybersecurity services tailored to companies of all sizes. Our solutions range from penetration testing and vulnerability assessments to managed security services and training.
-
-Our team has discovered some of the largest data breaches and helped defend critical infrastructure against sophisticated nation-state actors. We leverage this real-world expertise to build proactive defenses focused on detecting and disrupting advanced attacks.
-
-At Snow Citty, we believe security requires a partnership between man and machine. Our security experts work side-by-side with our technology to provide comprehensive protection across your entire digital ecosystem.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Built With
-
-* [Kali Linux](https://www.kali.org/)
-* [Metasploit](https://www.metasploit.com/)
-* [Wireshark](https://www.wireshark.org/) 
-* [Burp Suite](https://portswigger.net/burp)
-* [Splunk](https://www.splunk.com/)
-* [
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
-Get in touch to learn more about our cybersecurity solutions and how we can help protect your company.
+To start securing your business, you'll need:
 
-### Prerequisites
+- Python 3.7 or higher installed (required for the API integration)
+- Your GuardingUS-AI API key (register on our [website](https://guardingus-ai.tech)) 
 
-No prerequisites required. Our experts will assess your unique needs and build a custom security program. 
+Then follow these steps:
 
-### Installation
+1. Clone this code repository 
+2. Install the required Python packages  
+3. Set your API key as an environment variable
+4. Import and instantiate the `GuardingUSClient` class
+5. Start calling API methods like `analyze()`, `detect_threats()`, etc!
 
-1. Contact our sales team to schedule a free consultation
-   ```sh
-   sales@snowcittysecurity.com
-   ```
-2. Our team will work with you to design a tailored security solution
-3. We'll implement cutting-edge techniques to secure your digital assets
-4. Provide ongoing monitoring, maintenance, and training
+We have code snippets below to help with each step.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+And that's it! Our API docs explain all available methods in detail. Let us know if any part of the setup is confusing.
 
-<!-- USAGE EXAMPLES -->
-## Usage
+## Usage Example
 
-Our services are designed to meet the needs of companies across all industries and sizes. Here are some examples of how we can help:
+Here's a quick demo of analyzing some text for threats:
 
-**Penetration Testing** - We ethically hack into your systems to find vulnerabilities before malicious actors do.
+```python
+from guardingus_ai import GuardingUSClient
 
-**Incident Response** - If you suffer a breach, our team will conduct forensic analysis and guide you through containment and recovery. 
+client = GuardingUSClient(api_key='YOUR_API_KEY')
 
-**Compliance Services** - We help you meet regulatory standards like HIPAA, PCI DSS, and SOC 2.
+text = "Meet me at the usual place at noon" 
 
-**Awareness Training** - Educate your employees on modern cybersecurity best practices through engaging workshops.
+results = client.analyze(text)
 
-**Managed SIEM** - 24/7 monitoring and alerting tuned to detect advanced threats targeting your organization.
+if results['threat_detected']:
+  print("Threat found! Here are the details:")
+  print(results['threat_details'])
+else:
+  print("No threats found.")
+```
 
-_For more information, visit our [website](https://snowcittysolutions.us)._
+The `analyze()` method checks for threats, anomalies, sensitive info, and more based on the text. Pretty cool right?
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+There's a ton more you can do with the API. Check the docs or reach out if you need help with a specific use case!
 
-<!-- ROADMAP -->
-## Roadmap
+## About Our Team
 
-See the [open issues](https://github.com/snowcittysecurity/snowcitty/issues) for a full list of proposed features and known issues.
+GuardingUS-AI was started by a team of passionate security engineers and product gurus:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Tsion Adefres (@tsionad) - 15+ years in cybersecurity 
+- Aster Hailu (@asterh) - Expert in AI and advanced threat detection
+- Nat Smithe (@natsmithe) - Leads UI/UX design and frontend
+- Bob Roberts (@bobrob) - Engineer turned PM and biz dev mastermind
 
-<!-- CONTRIBUTING -->
-## Contributing
+We value simplicity, automation, and making security accessible for organizations of any size. And we're backed by years of experience building enterprise systems used by leading companies.  
 
-Contributions are what makes the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+If you have any feedback about our product or company, we'd love to hear from you directly at info@guardingus.ai.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. Don't forget to give the project a star! Thanks again!
+And if you find GuardingUS-AI Services useful, share it with others who may benefit! Word of mouth helps us continue improving.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Okay, that's my spiel - hopefully this gives you a better sense of who we are and what our product aims to provide. Let me know if you have any other questions!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- CONTACT -->
-## Contact
-
-Snow Citty Security Solutions
-
-sales@snowcittysecuritysolutions.us
-
-Project Link: [https://github.com/snowcittysecurity/snowcitty](https://github.com/snowcittysecurity/snowcitty)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* [Othneil Drew's Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-* [PurpleBooth's README Template](https://github.com/PurpleBooth/a-good-readme-template)
-* [Datree's README Guide](https://github.com/datreeio/readme-guide)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/snowcittysecurity/snowcitty.svg?style=for-the-badge
-[contributors-url]: https://github.com/snowcittysecurity/snowcittygraphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/snowcittysecurity/snowcitty.svg?style=for-the-badge
-[forks-url]: https://github.com/snowcittysecurity/snowcitty/network/members
-[stars-shield]: https://img.shields.io/github/stars/snowcittysecurity/snowcitty.svg?style=for-the-badge
-[stars-url]: https://github.com/snowcittysecurity/snowcitty/stargazers
-[issues-shield]: https://img.shields.io/github/issues/snowcittysecurity/snowcitty.svg?style=for-the-badge
-[issues-url]: https://github.com/snowcittysecurity/snowcitty/issues
-[license-shield]: https://img.shields.io/github/license/snowcittysecurity/snowcitty.svg?style=for-the-badge
-[license-url]: https://github.com/snowcittysecurity/snowcitty/blob/master/LICENSE.txt
-[product-screenshot]: images/screenshot.png
+-HuntEmAll.Dev
+Founder of GuardingUS-AI
